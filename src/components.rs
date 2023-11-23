@@ -14,3 +14,9 @@ pub struct Enemy;
 
 #[derive(Clone, Copy, Debug, PartialEq)]
 pub struct MoveRandomly;
+
+#[derive(Clone, Copy, Debug, PartialEq)]
+pub struct MoveIntention {
+    pub entity: Entity,
+    pub destination: Point,
+}
